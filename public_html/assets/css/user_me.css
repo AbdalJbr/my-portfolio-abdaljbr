@@ -11695,7 +11695,7 @@ pre .code {
 }
 
 .bg-footer{
-  background-image: url('/public_html/assets/imgs/bg_color.png');
+  background-image: url(../imgs/bg_color.png);
 }
 
 .animate {
