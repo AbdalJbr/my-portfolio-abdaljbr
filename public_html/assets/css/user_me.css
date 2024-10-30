@@ -165,11 +165,16 @@ a {
   color: #F85C70;
   text-decoration: none;
   background-color: transparent;
+
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
 }
 
 a:hover {
   color: #f51330;
   text-decoration: none;
+
+  transform: translateY(-10px);
+
 }
 
 a:not([href]):not([tabindex]) {
@@ -242,6 +247,7 @@ button {
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color;
+  
 }
 
 input,
@@ -258,11 +264,13 @@ textarea {
 button,
 input {
   overflow: visible;
+  
 }
 
 button,
 select {
   text-transform: none;
+  
 }
 
 select {
@@ -11506,8 +11514,8 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/bg_header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/bg_header.jpg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/bg_new.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/bg_new.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11621,8 +11629,9 @@ pre .code {
 }
 
 .contact {
-  background-image: url('/public_html/assets/imgs/bg_header.jpg');
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/bg_new.jpg);
   background-size: cover;
+  background-position: center;
   position: relative;
   min-height: 700px;
   display: -webkit-box;
@@ -11685,9 +11694,17 @@ pre .code {
   margin-top: 10px;
 }
 
-
 .bg-footer{
   background-image: url('/public_html/assets/imgs/bg_color.png');
 }
 
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
 
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}

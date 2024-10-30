@@ -10,11 +10,12 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + main styles -->
 	<link rel="stylesheet" href="assets/css/user_me.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
     <header class="header">
-        <div class="container">
+        <div class="container" data-aos="zoom-out-right">
             <ul class="social-icons pt-3">
                 <li class="social-item"><a class="social-link text-light" href="https://www.facebook.com/abdal.jabar.12"><i class="ti-facebook" aria-hidden="true"></i></a></li>
                 <li class="social-item"><a class="social-link text-light" href="mailto:abdal.jabar136@gmail.com"><i class="ti-email" aria-hidden="true"></i></a></li>
@@ -26,9 +27,8 @@
                 <h1 class="header-title">ABDAL JABAR</h1>
                 <h6 class="header-mono" >Programmer | Developer | IT Support</h6>
                 <a href="assets/document/cv_abdaljabar.pdf" download="CV_AbdalJabar.pdf">
-
+                    <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
                 </a>
-                <button class="btn btn-primary btn-rounded" onclick="redirectWA()"><i class="ti-printer pr-2"></i>Print Resume</button>
             </div>
         </div>
     </header>
@@ -50,7 +50,7 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav brand">
-                    <img src="assets/imgs/bg_avatar.jpg" alt="" class="brand-img">
+                    <img src="assets/imgs/bg_ava.jpg" alt="" class="brand-img">
                     <li class="brand-txt">
                         <h5 class="brand-title">Abdal Jabar</h5>
                         <div class="brand-subtitle">Java | PHP | Android</div>
@@ -70,7 +70,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
         <div id="about" class="row about-section">
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Who am I ?</h3>
@@ -102,7 +102,7 @@
                 <span class="line mb-5"></span>
                 <div class="row">
                     <div class="col-1 text-danger pt-1"><i class="ti-desktop icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
+                    <div class="col-10 ml-auto mr-3 ">
                         <h6>Software Development</h6>
                         <p class="subtitle">Website, Android, and desktop.</p>
                         <hr>
@@ -130,7 +130,8 @@
 
     <!--Resume Section-->
     <section class="section" id="resume">
-        <div class="container">
+        <div class="container"
+        data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
             <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
@@ -224,7 +225,7 @@
     </section>
 
     <section class="section bg-dark py-5 bg-footer">
-        <div class="container text-center">
+        <div class="container text-center animate">
             <h2 class="text-light mb-5 font-weight-normal">😎 I Am Ready For FreeLance or Jobseeker 😎</h2>
             <button class="btn bg-primary w-lg" onclick="redirectWA()" >Hire me</button>
         </div>
@@ -232,21 +233,21 @@
 
     <!-- Portfolio Section -->
     <section class="section bg-custom-gray" id="portfolio">
-        <div class="container">
+        <div class="container animate">
             <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
             <div class="portfolio">
                 <div class="filters">
                     <a href="#" data-filter=".website" class="active">
-                        WebsiteBaryuStore
+                        BaryuStore
                     </a>
                     <a href="#" data-filter=".desktop">
                         MiniBank
                     </a>
                     <a href="#" data-filter=".android">
-                        AndroidExpertSystem
+                        ExpertSystem
                     </a>
                     <a href="#" data-filter=".android2">
-                        AndroidSiCermat
+                        SiCermat
                     </a>
                 </div>
                 <div class="portfolio-container"> 
@@ -623,9 +624,8 @@
     </section>
 
 
-    <div class="section contact" id="contact">
-        
-        <div class="container">
+    <div class="section contact" id="contact" >
+        <div class="container pb-2 animate">
             <div class="row">
                 <div class="col-lg-8">
                     <div class="contact-form-card">
@@ -672,9 +672,9 @@
                         </div>
                         <ul class="social-icons pt-4">
                             <li class="social-item"><a class="social-link text-dark" href="https://www.facebook.com/abdal.jabar.12"><i class="ti-facebook" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-dark" href="mailto:abdal.jabar136@gmail.com"><i class="ti-email" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/abdaljbr_/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-dark" href="https://github.com/abdaljbr"><i class="ti-github" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="mailto:abdal.jabar136@gmail.com"><i class="ti-email" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/abdaljbr_/"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/abdaljbr"><i class="ti-github" aria-hidden="true"></i></a></li>
                         </ul> 
                     </div>
                 </div>
@@ -684,8 +684,8 @@
     </div>
     <footer class="footer py-3 bg-footer"  >
         <div class="container" >
-            <p class="small mb-0 text-light">
-                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By Me
+            <p class="text-right small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By Me | Abdal Jabar
             </p>
         </div>
     </footer>
@@ -705,6 +705,12 @@
 
     <!-- js -->
     <script src="assets/js/user_me.js"></script>
+
+    <!--Animasi css-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 
 </body>

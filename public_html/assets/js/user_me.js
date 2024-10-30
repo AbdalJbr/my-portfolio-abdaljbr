@@ -1,3 +1,16 @@
+const elements = document.querySelectorAll('.animate');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); // opsional, untuk hanya menganimasi sekali
+        }
+    });
+});
+
+elements.forEach(element => observer.observe(element));
+
 
 $(document).ready(function(){
     $(".navbar .nav-link").on('click', function(event) {
