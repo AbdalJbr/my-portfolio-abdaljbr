@@ -11696,6 +11696,8 @@ pre .code {
 
 .bg-footer{
   background-image: url(../imgs/bg_color.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .animate {
